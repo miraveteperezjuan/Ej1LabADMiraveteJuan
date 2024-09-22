@@ -15,7 +15,7 @@ public class Entrada {
 
         File carpeta = new File("src/resouces/directorio");
         String[] content = carpeta.list();
-        System.out.println("Ficheros del directorio" + carpeta);
+        System.out.println("Ficheros del directorio " + carpeta); //Te dice la ruta del directorio
         System.out.println("-----------------------");
         for (String aux : content) {
             System.out.println(aux);
@@ -26,7 +26,7 @@ public class Entrada {
 
         System.out.println("---- Ejercicio 2 ----");
 
-        File file1 = new File("src/resouces/directorio/subcarpeta/ficheronuevo.txt");
+        File file1 = new File("src/resouces/directorio/subcarpeta/ficheronuevo.md");
 
         if (!file1.exists()) {
             try {
@@ -35,7 +35,7 @@ public class Entrada {
                 throw new RuntimeException("No se ha podido crear" + file1 + e.getMessage());
             }
         }
-
+/*
         // 3 -> Listar el nombre de todos los ficheros del SISTEMA ( C:/User o /Users )
 
         File actividad3 = new File("C:/Users");
@@ -52,6 +52,9 @@ public class Entrada {
                 listarTodo(aux);
             }
         }
+
+
+ */
     }
 
 }
